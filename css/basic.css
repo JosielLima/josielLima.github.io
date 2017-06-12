@@ -3,11 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
-    /*background-color: #e9a621;*/
     background-color: #e9a621;
     text-align: center;
-    
-    
 }
 
 p {
@@ -26,6 +23,12 @@ img {
     max-width: 100%;
 }
 
+a{
+    color: #e9a621;
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -38,6 +41,17 @@ img {
     padding-bottom: 50px;
 }
 
+.idioma {
+
+}
+
+.idioma li {
+       display: inline-block;
+       padding: 1px 3px;
+       border: 1px solid #e9a621;
+       background-color: #fff;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -45,6 +59,7 @@ nav {
 
 .topo{
     margin-top: -100px;
+    position: relative;
 }
 
 .top-nav-image {
@@ -53,11 +68,24 @@ nav {
     width: 150px;
 }
 
-.social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.top-idioma{
+    position: absolute;
+    top: 0;
+    right:0;
 }
+
+.social_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social_list_item{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
 
 .icons{
     width: 35px;
@@ -78,12 +106,6 @@ nav {
     font-size: 1.3rem;
     list-style: none;
     margin-left: -30px;
-}
-
-.projetos-lista a {
-    color: #e9a621;
-    text-decoration: none;
-    font-family: 'Hind', sans-serif;
 }
 
 @media (max-width: 575px) {
